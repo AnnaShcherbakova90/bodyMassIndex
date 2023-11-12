@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        BmiService service = new BmiService();
+        double weigtKilo = 98;
+        double highMetter = 1.87;
+        int indexBmi = service.calculate(weigtKilo, highMetter);
+        System.out.println("index = " + indexBmi);
     }
 }
